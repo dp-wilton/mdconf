@@ -3,7 +3,7 @@ var fs = require('fs');
 var dir = fs.readdirSync;
 var read = fs.readFileSync;
 var join = require('path').join;
-var resolve = require('path').resolve;
+var assert = require('assert');
 var parse = require('..');
 
 dir('test/cases').forEach(function(file){
@@ -12,8 +12,10 @@ dir('test/cases').forEach(function(file){
   describe(base, function(){
     it('should work', function(){
       var md = read(join('test/cases', file), 'utf8');
-      var json = require(resolve('test/cases', file.replace('.md', '.json')));
-      parse(md).should.eql(json);
+      var jsonfilename = file.replace('.md', '.json');
+      var json = require(join('../test/cases', jsonfilename));
+      var conf = parse(md);
+      assert.deepEqual(conf, json);
     })
   })
 });

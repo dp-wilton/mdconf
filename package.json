@@ -17,7 +17,7 @@
     "marked": "^5.1.2"
   },
   "devDependencies": {
-    "mocha": "^1.21.5",
+    "mocha": "^11.0.1",
     "should": "~1.2.2"
   },
   "main": "index",
