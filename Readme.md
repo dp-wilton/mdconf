@@ -5,6 +5,8 @@
   This is a fork of [mdconf](https://github.com/tj/mdconf) by TJ Holowaychuk.
   The original project is inactive and not merging pull requests, so forked for the purpose of updating risky dependencies.
 
+  The parser implementation borrows heavily from [@kristiandupont/mdconf](https://github.com/kristiandupont/mdconf) which is a TypeScript version of the mdconf with active contributors.
+
 
   Using the fantastic markdown parser [marked](https://github.com/chjj/marked).
 
