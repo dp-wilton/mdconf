@@ -2,6 +2,9 @@
 
   Markdown driven configuration!
 
+  This is a fork of [mdconf](https://github.com/tj/mdconf) by TJ Holowaychuk.
+  The original project seems abandoned, so forked for the purpose of updating risky dependencies.
+
   Using the fantastic markdown parser [marked](https://github.com/chjj/marked).
 
 ## Installation
